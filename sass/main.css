@@ -1514,7 +1514,10 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    padding-left: 78px 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
     width: 100%;
     height: 100%;
     font-size: 18px;
@@ -1578,10 +1581,7 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    display: flex;
-    align-items: center;
+    padding: 77px 24px;
     width: 100%;
     height: 100%;
     font-size: 18px;
@@ -1601,10 +1601,7 @@ button {
     background: #ffffff;
   }
   .img-text {
-    padding-left: 24px;
-    padding-right: 24px;
-    display: flex;
-    align-items: center;
+    padding: 63px 24px;
   }
 }
 @media screen and (max-width: 767px) {
