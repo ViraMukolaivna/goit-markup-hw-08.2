@@ -1,0 +1,164 @@
+// Phone
+@media screen and (max-width: 767px) {
+  .header-navigation {
+    display: none;
+  }
+  .header {
+    border-bottom: 1px solid #ececec;
+  }
+  .auth-nav {
+    display: none;
+  }
+  .button-menu {
+    padding: 0;
+    line-height: 0;
+
+    background-color: transparent;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+// tablet
+
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+  .header {
+    border-bottom: 1px solid #ececec;
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-navigation {
+      margin-left: 88px;
+    }
+  }
+
+  .site-nav {
+    display: flex;
+  }
+
+  .header-item + .header-item {
+    margin-left: 50px;
+  }
+  .site-nav .link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--transition);
+
+    color: var(--main-text-color);
+
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.14;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &.current {
+      color: var(--accent-color);
+    }
+  }
+
+  .auth-nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  .auth-nav .item + .item {
+    margin-top: 10px;
+  }
+
+  .auth-nav .link {
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.14;
+
+    transition: color var(--transition);
+
+    color: var(--secondary-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .nav-icon {
+    fill: currentColor;
+    margin-right: 8px;
+  }
+  .nav-icon.mail {
+    width: 14px;
+    height: 10px;
+  }
+  .nav-icon.tel {
+    width: 10px;
+    height: 14px;
+  }
+  .current::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+
+    width: 100%;
+    height: 4px;
+
+    background: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+// desktop
+@media screen and (min-width: 1200px) {
+  .header {
+    &-navigation {
+      margin-left: 93px;
+    }
+  }
+  .auth-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .auth-nav .item + .item {
+    margin-left: 50px;
+    margin-top: 0px;
+  }
+
+  .auth-nav .link {
+    display: flex;
+    align-items: center;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .nav-icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  .nav-icon.mail {
+    width: 16px;
+    height: 12px;
+  }
+  .nav-icon.tel {
+    width: 10px;
+    height: 16px;
+  }
+}

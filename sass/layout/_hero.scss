@@ -1,0 +1,192 @@
+// Phone
+@media screen and (max-width: 768px) {
+  .hero {
+    text-align: center;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    max-height: 400px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/overlay@1x-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #c4c4c4;
+    background-size: cover;
+  }
+  .hero-title {
+    letter-spacing: 0.06em;
+    @include font(900, 26px, 1.62);
+    text-transform: uppercase;
+
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    color: var(--background-color);
+  }
+  .hero-button {
+    padding: 10px 24px;
+    min-width: 200px;
+
+    margin: 0 auto;
+
+    @include font($lh: 1.88);
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color var(--transition);
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+}
+
+// tablet
+@media screen and (min-width: 768px) {
+  .hero {
+    text-align: center;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    height: 400px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/overlay@1x-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #c4c4c4;
+    background-size: cover;
+  }
+  .hero-title {
+    letter-spacing: 0.06em;
+    @include font(900, 26px, 1.62);
+    text-transform: uppercase;
+
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    color: var(--background-color);
+  }
+  .hero-button {
+    margin: 0 auto;
+    padding: 10px 24px;
+    min-width: 200px;
+
+    @include font($lh: 1.88);
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color var(--transition);
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+}
+
+// desktop
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/overlay@1x-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #c4c4c4;
+    background-size: cover;
+  }
+  .hero-title {
+    letter-spacing: 0.06em;
+    @include font(900, 44px, 1.36);
+
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    color: var(--background-color);
+  }
+  .hero-button {
+    padding: 10px 32px;
+    min-width: 216px;
+
+    @include font($lh: 1.88);
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color var(--transition);
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/overlay@2x-mobile.jpg');
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/overlay@1x-tablet.jpg');
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/overlay@2x-tablet.jpg');
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: inear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/overlay@2x-desktop.jpg');
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/overlay@1x-desktop.jpg');
+  }
+}

@@ -1,0 +1,134 @@
+// Phone
+@media screen and (max-width: 767px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .clients-item {
+    width: calc((100% - 30px) / 2);
+  }
+  .clients-title {
+    @include font(700, 28px, 1.18);
+    text-align: center;
+
+    margin-bottom: 30px;
+  }
+
+  .clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    color: #afb1b8;
+    background-color: var(--background-color);
+
+    transition: color var(--transition), border var(--transition);
+
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+      color: var(--accent-color);
+    }
+  }
+}
+
+// tablet
+@media screen and (min-width: 768px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .clients-title {
+    @include font(700, 28px, 1.18);
+    text-align: center;
+
+    margin-bottom: 30px;
+  }
+
+  .clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 226px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    color: #afb1b8;
+    background-color: var(--background-color);
+
+    transition: color var(--transition), border var(--transition);
+
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+      color: var(--accent-color);
+    }
+  }
+}
+
+// desktop
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 0px;
+    row-gap: 0px;
+  }
+  .clients-title {
+    @include font($fs: 36px);
+    text-align: center;
+
+    margin-bottom: 50px;
+  }
+  .clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    color: #afb1b8;
+    background-color: var(--background-color);
+
+    transition: color var(--transition), border var(--transition);
+
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+      color: var(--accent-color);
+    }
+  }
+  .clients-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
